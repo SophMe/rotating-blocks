@@ -1,12 +1,14 @@
 let distMouse = 30;
-let size = 30;
+let size = 20;
 let offset = 4; 
 let cols;
 let rows;
 let blocks = [];
+let baseColor = 70;
+let lightColor = 255;
 
 function setup() {
-  createCanvas (400, 400);
+  createCanvas (windowWidth, windowHeight);
   rectMode(CENTER);
   angleMode(DEGREES);
   cols = width/size;

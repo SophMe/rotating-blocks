@@ -3,7 +3,7 @@ class Block {
     this.x = x;
     this.y = y;
     this.angle = 0;
-    this.c = 70;
+    this.c = baseColor;
   }
 
   display() {
@@ -32,19 +32,19 @@ class Block {
       // print(distance)
       if (distance < distMouse) {
         this.angle += 1;
-        this.c = 255;
+        this.c = lightColor;
       }
     }
 
     // if squares are rotating continue
     if (this.angle > 0 && this.angle < 91) {
       this.angle += 1;
-      if (this.c > 70) {
+      if (this.c > baseColor) {
         this.c -= 3; 
       }
     } else {
       this.angle = 0;
-      this.c = 70;
+      this.c = baseColor;
     }
   }
 
