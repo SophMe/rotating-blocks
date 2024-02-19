@@ -8,7 +8,7 @@ let baseColor = 70;
 let lightColor = 255;
 
 function setup() {
-  createCanvas (windowWidth, windowHeight);
+  createCanvas (window.innerWidth, window.innerHeight);
   rectMode(CENTER);
   angleMode(DEGREES);
   cols = width/size;
